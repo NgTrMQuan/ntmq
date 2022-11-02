@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8"
+    <meta name="description" content="Minkuan form"/>
+    <meta name="keywords" content="forms , course , IT , registration"/>
+    <meta name="author" content="Min Kuan" />
+</head>
+<body>
+    <h1>Min Kuan</h1>
+    <h2>Registration Form</h2>
+
+    <form method="post" action="https://mercury.swin.edu.au/it000000/formtest.php">
+        <fieldset>
+            <legend>Personal Information</legend>
+            <p><label for="firstname">Enter Your First Name : </label>
+            <input type="text" id="firstname" name="firstname"/></p>
+
+            <p><label for="lastname">Enter Your Last Name : </label>
+            <input type="text" id="lastname" name="lastname"/></p>
+            
+            <p><label for="email">Enter Your Email :</label>
+            <input type="text" id="email" name="email"/></p>
+            
+            <p><label for="phone_number">Enter Your Phone Number :</label>
+            <input type="text" id="phone_number" name="phone_number"/></p>
+
+            <p><label for="age">Enter Your Age :</label>
+            <input type="text" id="age" name="age"/></p>
+        </fieldset>
+        <br/>        
+        <br/>
+        
+        <fieldset>
+            <legend> Select your occupation: </legend>
+
+            <p><label for="highschool">Highschool</label>
+            <input type="radio" id="highschool" name="occupation" value="Highschool"></p>
+                
+            <p><label for="university">University</label>
+            <input type="radio" id="university" name="occupation" value="University"></p>
+                
+            <p><label for="working">Working</label>
+            <input type="radio" id="working" name="occupation" value="Working"></p>
+            
+            <p><label for="retired">Retired</label>
+            <input type="radio" id="retired" name="occupation" value="Retired"></p>
+        </fieldset>
+        <br/>
+
+        <fieldset>
+            <legend>Select course</legend>
+
+            <p><label for="logicmath">Logic Math</label>
+            <input type="checkbox" id="logicmath" name="logicmath" value="logicmath"</p>
+        </fieldset>
+
+        <br/>
+        <input type="submit" value="Enter"/>   
+    </form>
+    
+</body>
+</html>
