@@ -1,16 +1,18 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="utf-8"
+    <meta charset="utf-8"/>
     <meta name="description" content="Minkuan form"/>
     <meta name="keywords" content="forms , course , IT , registration"/>
     <meta name="author" content="Min Kuan" />
+    <script src="formjs/form.js" ></script>
 </head>
 <body>
     <h1>Min Kuan</h1>
     <h2>Registration Form</h2>
 
-    <form method="post" action="https://mercury.swin.edu.au/it000000/formtest.php">
+    <form id="registerForm" method="post" action="confirm.html">
+        
         <fieldset>
             <legend>Personal Information</legend>
             <p><label for="firstname">Enter Your First Name : </label>
@@ -52,11 +54,29 @@
             <legend>Select course</legend>
 
             <p><label for="logicmath">Logic Math</label>
-            <input type="checkbox" id="logicmath" name="logicmath" value="logicmath"</p>
-        </fieldset>
+            <input type="checkbox" id="logicmath" name="logicmath" value="logicmath"></p>
 
+            <p><label for="logicmath">AI</label>
+            <input type="checkbox" id="logicmath" name="logicmath" value="logicmath"></p>
+
+            <p><label for="logicmath">Data science</label>
+            <input type="checkbox" id="logicmath" name="logicmath" value="logicmath"></p>
+        </fieldset>
         <br/>
-        <input type="submit" value="Enter"/>   
+
+        <fieldset>
+            <legend>Payment</legend>
+            <p><label for="payment">Method</label></p>
+            <select>
+                <option value="none">Please select</option>
+                <option value="cash">Cash</option>
+                <option value="paypal">Paypal</option>
+                <option value="credit card">Credit Card</option>
+            </select>
+        </fieldset>
+        <br/>
+        <input type="submit" value="Registernow"/>   
+        <input type="reset" value="Reset"/>
     </form>
     
 </body>
